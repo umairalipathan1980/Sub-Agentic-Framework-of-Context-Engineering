@@ -20,10 +20,20 @@ The Claude Sub-Agent Framework consists of 12 specialized sub-agents and 11 comm
 
 ### Installation
 
-Run the setup script to create the complete framework structure:
+You can run the setup script to create the complete framework structure:
+
+For Linux users:
 
 ```bash
-bash setup_claude_multi_agents_script.sh
+chmod +x setup_claude_multi_agents_script.sh
+./setup_claude_multi_agents_script.sh
+```
+
+For Windows users:
+
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\setup_claude_multi_agents_script.ps1
 ```
 
 This creates:
@@ -115,6 +125,7 @@ This creates:
 5. **Quality**: `/review current` or `/review complete`
 
 ## Core Templates
+The main documentation file of the project created by running `/analyze` command that triggers `project-analyzer` sub-agent. This agent thoroughly analyzes every bit of the project and creates a comprehensive documents having the following structure. 
 
 ### CLAUDE.md Structure (13 sections)
 1. Overview
@@ -132,6 +143,7 @@ This creates:
 13. References & External Resources
 
 ### INITIAL.md Structure (4 sections)
+
 - **FEATURE**: Problem description, requirements, acceptance criteria
 - **EXAMPLES**: Reference implementations and usage patterns
 - **DOCUMENTATION**: Required updates and external links
