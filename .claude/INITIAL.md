@@ -1,4 +1,4 @@
-﻿## FEATURE:
+## FEATURE:
 [Describe what you want to build - be specific about functionality and requirements]
 
 ## EXAMPLES:
