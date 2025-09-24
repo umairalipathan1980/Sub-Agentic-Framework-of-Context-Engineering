@@ -4,12 +4,12 @@ A specialized, autonomous sub-agent framework for Claude Code that transforms so
 
 ## Overview
 
-The Claude Sub-Agent Framework consists of 12 specialized sub-agents and 11 command triggers that work together to handle every aspect of software development, from project analysis to feature implementation to quality assurance. Each agent has distinct expertise, tools, and validation procedures, creating a true autonomous intelligence system rather than generic task handling.
+The current version of Claude Sub-Agent Framework consists of 12 specialized sub-agents and 11 command triggers that work together to handle different aspects of software development, from project analysis to feature implementation to quality assurance. Each agent has distinct expertise, tools, and validation procedures.
 
 ## Key Features
 
 - **Autonomous Specialization**: 12 sub-agents with distinct expertise and decision-making capabilities
-- **Conditional Routing**: Commands intelligently choose between agents based on project context
+- **Conditional Routing**: Commands choose between agents based on project context
 - **Incremental Intelligence**: Preserves existing work and only updates what has actually changed
 - **Validation Gates**: Phase-by-phase validation ensures working code at each milestone
 - **Web-Aware**: Agents can search for and cite authoritative external documentation
@@ -79,7 +79,7 @@ This creates:
 ### Sub-Agent Categories
 
 **Analysis & Discovery Agents**: These agents understand and analyze projects to establish context and create foundational documentation.
-- `greenfield-initializer` - Bootstrap brand-new repositories
+- `greenfield-initializer` - Bootstrap brand-new repositories (starting a new project from scratch with an empty directory)
 - `project-analyzer` - Comprehensive project understanding  
 - `minor-analyzer` - Incremental change analysis
 
@@ -143,6 +143,7 @@ The main documentation file of the project created by running `/analyze` command
 13. References & External Resources
 
 ### INITIAL.md Structure (4 sections)
+INITIAL.md is generated to provide the prp-generator agent with standardized, complete requirements that it can reliably transform into detailed implementation blueprints. The four-section structure ensures that prp-generator receives all the context it needs to create comprehensive PRPs with proper phasing, validation gates, and success criteria.
 
 - **FEATURE**: Problem description, requirements, acceptance criteria
 - **EXAMPLES**: Reference implementations and usage patterns
@@ -174,7 +175,6 @@ The framework implements smart routing:
 
 ## Safety & Constraints
 
-- All agents use read-only operations by default
 - Bash commands limited to safe, non-destructive operations
 - Systematic token conservation through targeted file discovery
 - Validation gates prevent broken code from advancing
