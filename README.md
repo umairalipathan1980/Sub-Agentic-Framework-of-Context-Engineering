@@ -1,6 +1,6 @@
-# Claude Sub-Agent Framework
+# Claude Code's Sub-Agentic Framework for Context Engineering
 
-A specialized, autonomous sub-agent architecture for Claude Code that transforms software development workflows through intelligent task delegation and context-aware routing.
+A specialized, autonomous sub-agent framework for Claude Code that transforms software development workflows through intelligent task delegation and context-aware routing. This is the first version of the framework with limited number of sub-agents. It will remain under evolution by updates from contributors. 
 
 ## Overview
 
