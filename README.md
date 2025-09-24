@@ -13,7 +13,6 @@ The current version of Claude Sub-Agent Framework consists of 12 specialized sub
 - **Incremental Intelligence**: Preserves existing work and only updates what has actually changed
 - **Validation Gates**: Phase-by-phase validation ensures working code at each milestone
 - **Web-Aware**: Agents can search for and cite authoritative external documentation
-- **Safety-Constrained**: Read-only operations with systematic token conservation
 - **Highly Customizable**: Add agents, modify existing ones, or redefine commands for specific workflows
 
 ## Quick Start
